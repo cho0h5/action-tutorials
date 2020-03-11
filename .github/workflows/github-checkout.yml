@@ -1,0 +1,17 @@
+name: github checkout
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    # Runs a single command using the runners shell
+    - name: Run pwd
+      run: pwd
+
+    # Runs a set of commands using the runners shell
+    - name: Run ls -al
+      run: ls -al
