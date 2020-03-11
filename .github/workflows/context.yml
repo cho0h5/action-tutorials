@@ -3,7 +3,7 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    jobs:
+    steps:
     - name: "context"
       env: 
         COMMIT_ID: ${{ github.sha }}
